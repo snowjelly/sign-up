@@ -76,7 +76,10 @@ body {
   flex-direction: column;
   height: 100vh;
   background-image: url("assets/preethi-viswanathan-GCof3Y8EO8o-unsplash.jpg");
-  background-size: cover;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 40vw;
 }
 
 .sidebar-head {
@@ -145,11 +148,14 @@ body {
 .form-row {
   padding: 6px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  width: 40%;
 }
 
 .form-col {
   margin-inline: 16px;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 label {
@@ -160,6 +166,23 @@ label {
 
 input {
   appearance: none;
+  border: 1px solid rgba(177, 174, 174, 0.568);
+  border-radius: 3px;
+}
+
+input[type="password"] {
+  font-size: x-small;
+  padding-bottom: 4px;
+}
+
+input:focus {
+  border: 1px solid blue;
+  outline: none;
+  box-shadow: 1px 3px 3px rgba(177, 174, 174, 0.568);
+}
+
+input:invalid {
+  border: 1px solid red;
 }
 
 button {
@@ -174,10 +197,15 @@ button {
   font-size: small;
   margin-top: 20px;
   margin-left: 32px;
+  box-shadow: 1px 3px 3px rgba(177, 174, 174, 0.568);
 }
 
 .main-footer p {
   font-weight: 500;
   font-size: smaller;
   padding: 32px;
+}
+
+a {
+  color: #596D48;
 }
