@@ -3,6 +3,11 @@
   src: url(assets/Inter-VariableFont_slnt,wght.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto mono";
+  src: url(assets/RobotoMono-VariableFont_wght.ttf) format("truetype");
+}
+
 /* CSS RESET /
   http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -120,4 +125,59 @@ body {
 
 .form-wrapper {
   background-color: white;
+  padding: 16px;
+  box-shadow: 1px 3px 3px rgba(177, 174, 174, 0.568);
+}
+
+.form-wrapper h2 {
+  width: fit-content;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  padding-left: 6px;
+}
+
+.form {
+  display: flex;
+
+}
+
+.form-row {
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-col {
+  margin-inline: 16px;
+}
+
+label {
+  font-family: "Roboto mono";
+  font-size: x-small;
+  margin-bottom: 2px;
+}
+
+input {
+  appearance: none;
+}
+
+button {
+  appearance: none;
+  background-color: #596D48;
+  border: 1px solid #596D48;
+  border-radius: 5px;
+  padding-inline: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: small;
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+.main-footer p {
+  font-weight: 500;
+  font-size: smaller;
+  padding: 32px;
 }
