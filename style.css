@@ -3,7 +3,8 @@
   src: url(assets/Inter-VariableFont_slnt,wght.ttf) format("truetype");
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* CSS RESET /
+  http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -51,7 +52,49 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+h1 {
+  margin: 0;
+}
+/*  CSS RESET */
 
 * {
   font-family: "Inter";
+}
+
+body {
+  display: flex;
+}
+
+.sidebar-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("assets/preethi-viswanathan-GCof3Y8EO8o-unsplash.jpg");
+  background-size: cover;
+}
+
+.sidebar-head {
+  display: flex;
+  align-items: center;
+  margin-top: 30%;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.sidebar-head > * {
+  margin-inline: 4px;
+}
+
+.sidebar-head img {
+  height: 100px;
+  width: 100px;
+  margin-left: 100px;
+}
+
+.sidebar-head h1 {
+  height: fit-content;
+  font-size: 50px;
+  color: aliceblue;
+  margin-right: 100px;
 }
