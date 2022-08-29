@@ -63,6 +63,7 @@ h1 {
 
 body {
   display: flex;
+  background-color: #f5f5f5;
 }
 
 .sidebar-img-wrapper {
@@ -87,8 +88,8 @@ body {
 }
 
 .sidebar-head img {
-  height: 100px;
   width: 100px;
+  height: 100px;
   margin-left: 100px;
 }
 
@@ -101,4 +102,22 @@ body {
 
 .italics {
   font-style: italic;
+}
+
+.intro {
+  margin-top: 10%;
+  padding: 32px;
+}
+
+.intro > * {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.intro {
+  width: 40%;
+}
+
+.form-wrapper {
+  background-color: white;
 }
